@@ -1,0 +1,98 @@
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* Courses Catalog */
+.courses-catalog {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  padding: 20px 10%;
+}
+.catalog-content {
+  grid-column: span 12;
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+.catalog {
+  grid-column: span 3;
+}
+.course,
+.course-explore {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.course-text {
+  font-weight: 500;
+  font-size: 14px;
+}
+.yellow-text {
+  color: rgb(238, 241, 38);
+}
+.catalog {
+  padding: 20px;
+  background: rgba(245, 245, 220, 0.779);
+  transition: 0.5s;
+}
+.catalog:hover {
+  transform: translate(-5px, -20px);
+}
+.catalog-title {
+  margin: 15px 0;
+}
+.catalog-body {
+  line-height: 2em;
+  font-size: 13px;
+  color: #888;
+}
+.explore-catalog {
+  grid-column: span 12;
+  position: relative;
+}
+.explore {
+  position: absolute;
+  right: 0;
+  padding: 15px 40px;
+  background: rgb(238, 241, 38);
+  border-radius: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.5s;
+  color: #000;
+}
+
+.explore:hover {
+  background: rgba(238, 241, 38, 0.624);
+}
+@media (max-width: 1024px) {
+  .catalog {
+    grid-column: span 4;
+  }
+}
+@media (max-width: 768px) {
+  .courses-catalog {
+    padding: 20px 3%;
+  }
+  .catalog {
+    grid-column: span 6;
+  }
+  .catalog:hover {
+    transform: translate(-5px, -10px);
+  }
+}
+@media (max-width: 460px) {
+  .catalog {
+    grid-column: span 12;
+  }
+}
+@media (max-width: 350px) {
+  .courses-catalog {
+    padding: 20px 0;
+  }
+}
