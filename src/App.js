@@ -12,9 +12,7 @@ import PageNotFound from "./pages/PageNotFound/PageNotFound";
 
 export default function App() {
   const location = useLocation();
-  // React.useEffect(() => {
-  //   location.pathname.startsWith('/') ? <HomeNavbar /> : <PagesNavbar />
-  // }, [location.pathname])
+
   return (
     <div>
       {
@@ -31,4 +29,4 @@ export default function App() {
       </Routes>
     </div>
   );
-}
+};
