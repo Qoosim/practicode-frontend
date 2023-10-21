@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../assets/pca-log.png';
 import { homeNavLinks } from '../../navLinks/navLinks';
 import styles from './homeHeader.module.css';
@@ -7,11 +7,11 @@ import styles from './homeHeader.module.css';
 export default function HomeNavbar() {
   return (
     <header className={styles.navbarContainer}>
-      <div className={styles.logoContainer}>
-        <a href="/">
+      <div>
+        <Link to="/" className={styles.logoContainer}>
           <img src={Logo} alt="PractiCode Logo" />
           <span>PractiCode Academy</span>
-        </a>
+        </Link>
       </div>
       <nav className={styles.navListContainer}>
         <ul className={styles.menuList}>

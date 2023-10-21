@@ -1,15 +1,17 @@
 import React from 'react'
 import Logo from '../../assets/pca-log.png';
 import styles from './pagesHeader.module.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { pagesNavLinks } from '../../navLinks/navLinks';
 
 export default function PagesNavbar() {
   return (
    <header className={styles.navbarContainer}>
-      <div className={styles.logoContainer}>
-        <img src={Logo} alt="PractiCode Logo" />
-        <span>PractiCode Academy</span>
+      <div>
+        <Link to="/" className={styles.logoContainer}>
+          <img src={Logo} alt="PractiCode Logo" />
+          <span>PractiCode Academy</span>
+        </Link>
       </div>
       <nav className={styles.navListContainer}>
         <ul className={styles.menuList}>
