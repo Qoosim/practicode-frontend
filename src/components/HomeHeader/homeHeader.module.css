@@ -34,6 +34,9 @@
   align-items: center;
   gap: 1.3rem;
   list-style: none;
+  outline: 1px solid #6d6c6c;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
 }
 
 .menuList a {

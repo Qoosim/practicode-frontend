@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from '../../assets/pca-log.png';
 import styles from './pagesHeader.module.css';
 import { Link, NavLink } from 'react-router-dom';
-import { pagesNavLinks } from '../../navLinks/navLinks';
+import { navLinks } from '../../navLinks/navLinks';
 
 export default function PagesNavbar() {
   return (
@@ -15,7 +15,7 @@ export default function PagesNavbar() {
       </div>
       <nav className={styles.navListContainer}>
         <ul className={styles.menuList}>
-          {pagesNavLinks.map((navItem, index) => {
+          {navLinks.map((navItem, index) => {
             return (
               <li key={index}>
                 <NavLink

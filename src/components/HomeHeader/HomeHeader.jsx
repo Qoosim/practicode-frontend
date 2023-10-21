@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../assets/pca-log.png';
-import { homeNavLinks } from '../../navLinks/navLinks';
+import { navLinks } from '../../navLinks/navLinks';
 import styles from './homeHeader.module.css';
 
 export default function HomeNavbar() {
@@ -15,7 +15,7 @@ export default function HomeNavbar() {
       </div>
       <nav className={styles.navListContainer}>
         <ul className={styles.menuList}>
-          {homeNavLinks.map((navItem, index) => {
+          {navLinks.map((navItem, index) => {
             return (
               <li key={index}>
                 <NavLink
