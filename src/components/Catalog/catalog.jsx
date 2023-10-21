@@ -1,7 +1,7 @@
 import React from "react";
-import "./catalogData.js";
-import "./catalog.css";
-import { catalog } from "./catalogData.js";
+import "./CatalogData.js";
+import "./Catalog.css";
+import { catalog } from "./CatalogData.js";
 const Catalog = () => {
   return (
     <div className="courses-catalog">
@@ -18,7 +18,7 @@ const Catalog = () => {
 
       {catalog.map((catalog) => (
         <div className="catalog" key={catalog.id}>
-          <img src={catalog.image} alt="" />
+          <img src={catalog.image} alt={catalog.alt} />
           <h3 className="catalog-title">{catalog.title}</h3>
           <p className="catalog-body">{catalog.body}</p>
         </div>

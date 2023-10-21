@@ -1,7 +1,7 @@
 // import { Routes, Route } from "react-router-dom";
 // import Navbar from "./components/Navbar/Navbar";
 import React from "react";
-import Catalog from "./components/Catalog/catalog";
+import Catalog from "./components/Catalog/Catalog";
 
 function App() {
   return (
