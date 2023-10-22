@@ -1,7 +1,7 @@
 import React from "react";
-import "./CatalogData.js";
-import "./Catalog.css";
-import { catalog } from "./CatalogData.js";
+import "./catalogData.js";
+import "./catalog.css";
+import { catalog } from "./catalogData.js";
 const Catalog = () => {
   return (
     <div className="courses-catalog">
