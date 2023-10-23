@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, useLocation } from "react-router-dom";
+// import { Route, Routes, useLocation } from "react-router-dom";
 import HomeNavbar from "./components/HomeHeader/HomeHeader";
 import PagesNavbar from "./components/PagesHeader/PagesHeader";
 import About from "./pages/About/About";
@@ -11,14 +11,15 @@ import HomePage from "./pages/HomePage/HomePage";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 
 export default function App() {
-  const location = useLocation();
+  // const location = useLocation();
 
   return (
     <div>
-      {
+      {/* {
         location.pathname === '/' ? <HomeNavbar /> : <PagesNavbar />
-      }
-      <Routes>
+      } */}
+      <Enrollment />
+      {/* <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/enrollment" element={<Enrollment />} />
         <Route path="/courses" element={<Courses />} />
@@ -26,7 +27,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="*" element={<PageNotFound />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 };
