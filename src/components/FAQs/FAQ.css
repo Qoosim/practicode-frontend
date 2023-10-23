@@ -1,0 +1,143 @@
+.yellow {
+  color: #ffca1a;
+}
+.bgyellow {
+  background-color: #ffca1a;
+}
+.black {
+  color: #212121;
+}
+.grey {
+  color: #424242;
+}
+.lightwhite {
+  color: #f6f2f2;
+}
+.bglightwhite {
+  background-color: #f6f2f2;
+}
+
+.col2 ul {
+  list-style: none;
+}
+#navbar {
+  height: 227px !important;
+}
+#contain {
+  display: flex;
+  top: 50;
+  height: 100%;
+  align-items: center;
+}
+.leftangle-vector {
+  margin-right: 7.5px;
+}
+#navbar::before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 226px;
+  width: 100%;
+  position: absolute;
+  background: url(images/bgimage.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -3;
+}
+#navbar::after {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 226px;
+  width: 100%;
+  position: absolute;
+  background: url(images/newvector.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+.nav--breadcrumb {
+  display: inline-flex;
+  align-items: center;
+}
+.nav--header h4 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.box {
+  background-color: #fff;
+  color: #212121;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 18px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.Questions {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 20px;
+}
+
+.FAQ--header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.FAQ--header h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.FAQ--header h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+}
+.FAQ--header,
+.FAQ--header h6,
+.FAQ--header h3,
+.FAQ--header .header--nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FAQ--header .headers {
+  width: 500px;
+}
+.FAQ--header .headers h3 {
+  text-align: center;
+}
+.header--nav a {
+  text-decoration: none;
+  color: #212121;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 25%;
+  margin-right: 10px;
+}
+.box .plus {
+  width: 16px;
+  height: 16px;
+}
+hr {
+  padding: 0;
+  margin: 0;
+}
+.rotate {
+  transform: rotate(45deg);
+}
+.hide {
+  display: none;
+}
