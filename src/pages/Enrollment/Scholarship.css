@@ -1,0 +1,28 @@
+html,body {
+    background-image: url(Practicode_Background.png);
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+#header{
+    width: 363px;
+    height: 102px;
+    top: 3501px;
+    left: 299px;
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+#text{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 1.600000023841858px;
+    text-align: left;
+}
+#textAndButton{
+    align-content: left;
+}
