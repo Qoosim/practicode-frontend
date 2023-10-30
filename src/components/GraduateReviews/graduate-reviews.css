@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --review-box-color: #f6f2f2;
+    --golden-yellow: #ffca1a;
+    --black: #424242;
+  }
+  
+  * {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body,
+  #root {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .yellow-text {
+    color: var(--golden-yellow);
+  }
+  
+  .black-text {
+    color: var(--black);
+  }
+  
+  .review-box {
+    position: relative;
+    width: 15.29167rem;
+    height: 13rem;
+    border-radius: 0.41667rem;
+    background: var(--review-box-color);
+    padding: 1.6667rem 1.4rem;
+    margin: 0 0.95667rem 4.5rem;
+    flex: 0 0 auto;
+    text-align: left;
+  }
+  
+  .review-box::before {
+    content: "";
+    position: absolute;
+    top: calc(100% - 0.3333rem);
+    left: 1.87333rem;
+    width: 2.541667rem;
+    height: 1.8333rem;
+    background: var(--review-box-color);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+  
+  .graduate-img {
+    width: 2.29167rem;
+    height: 2.29167rem;
+    border-radius: 0.125rem;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 0.62667rem;
+  }
+  
+  .graduate-img img {
+    width: 100%;
+  }
+  
+  .graduate-info {
+    display: inline-block;
+    position: relative;
+    height: 2.29167rem;
+  }
+  
+  .graduate-info div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  
+  .graduate-info div * {
+    margin: 0.06667rem 0;
+    white-space: nowrap;
+  }
+  
+  .review {
+    padding-top: 1.4rem;
+  }
+  
+  .review p {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.08667rem;
+  }
+  
+  .review-carousel-btn {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: inline-block !important;
+    margin: 0 0.41667rem;
+  }
+  
+  .review-carousel-btn.active {
+    background-color: var(--golden-yellow);
+    background-clip: content-box;
+    padding: 0.33333rem;
+    border: 2px solid var(--golden-yellow);
+  }
+  
+  .carousel {
+    position: relative;
+    margin: auto;
+    width: fit-content;
+  }
+  
+  .buttons {
+    display: table;
+    margin: auto;
+  }
+  
+  .buttons div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .heading {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heading p {
+    color: var(--golden-yellow);
+    display: inline-block;
+    font-size: 0.66667rem;
+    font-weight: 500;
+    margin-left: 0.1rem;
+  }
+  
+  .heading .line {
+    display: inline-block;
+    width: 1.8346rem;
+    height: 0.08rem;
+    margin: 0;
+    border: 0;
+    background-color: var(--golden-yellow);
+    border-color: var(--golden-yellow);
+  }
+  
+  .heading,
+  .heading-sub {
+    margin: 0;
+  }
+  
+  .main {
+    text-align: center;
+  }
+  
+  .description {
+    width: 32.79167rem;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+  
+  .description p {
+    font-size: 0.66667rem;
+  }
+  
+  @media (max-width: 1024px) {
+    .description {
+      width: 85%;
+    }
+  }
+  
