@@ -1,5 +1,6 @@
 import React from "react";
-import hyphen from "./images/pseudo.png";
+import "./FAQ.css";
+import hyphen from "../../images/pseudo.png";
 export default function Header() {
   return (
     <div className="FAQ--header">
@@ -8,7 +9,7 @@ export default function Header() {
           <img src={hyphen} alt="" />
           FAQ Questions
         </h6>
-        <h3 className="black">Get Every General Answers From Here</h3>
+        <h3 className="black subHead">Get Every General Answers From Here</h3>
         <div className="header--nav">
           <a href="" className="bgyellow">
             General

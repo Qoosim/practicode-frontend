@@ -1,6 +1,6 @@
 import React from "react";
 import "./FAQ.css";
-import back from "./images/Vector.png";
+import back from "../../images/Vector.png";
 
 export default function Nav() {
   return (

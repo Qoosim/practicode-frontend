@@ -17,6 +17,10 @@
   background-color: #f6f2f2;
 }
 
+.col2 {
+  margin-left: 23.2px;
+}
+
 .col2 ul {
   list-style: none;
 }
@@ -61,10 +65,12 @@
   display: inline-flex;
   align-items: center;
 }
+
 .nav--header h4 {
   font-size: 40px;
   font-style: normal;
   font-weight: 800;
+  margin-top: 22px;
 }
 
 .box {
@@ -85,9 +91,22 @@
 }
 
 .wrapper {
+  font-family: "Lato";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   grid-gap: 20px;
+}
+.answer {
+  color: #424242;
+  font-family: "Urbanist";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26.08px;
 }
 
 .FAQ--header {
@@ -98,11 +117,7 @@
   font-size: 14px;
   text-transform: uppercase;
 }
-.FAQ--header h3 {
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 800;
-}
+
 .FAQ--header,
 .FAQ--header h6,
 .FAQ--header h3,
@@ -110,21 +125,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Lato";
 }
 .FAQ--header .headers {
   width: 500px;
 }
 .FAQ--header .headers h3 {
   text-align: center;
+  height: 104px;
 }
 .header--nav a {
   text-decoration: none;
   color: #212121;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 12px;
-  padding-right: 12px;
-  border-radius: 25%;
+  padding-left: 27px;
+  padding-right: 27px;
+  border-radius: 64px;
   margin-right: 10px;
 }
 .box .plus {
@@ -134,10 +151,24 @@
 hr {
   padding: 0;
   margin: 0;
+  height: 0.75px;
+  color: rgba(0, 0, 0, 0.1);
 }
 .rotate {
   transform: rotate(45deg);
 }
 .hide {
   display: none;
+}
+#contain {
+  margin-left: 106.7px;
+}
+.subHead {
+  font-size: 40px;
+  font-style: normal;
+  font-family: "Lato";
+  font-weight: 800;
+  line-height: 56px;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }

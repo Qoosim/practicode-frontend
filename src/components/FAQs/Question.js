@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./FAQ.css";
-import plus from "./images/plus.png";
-import minus from "./images/minus.png";
+import plus from "../../images/plus.png";
+import minus from "../../images/minus.png";
 
 export default function Question({ question, answer }) {
   const [isExpanded, setIsExpanded] = useState(false);
