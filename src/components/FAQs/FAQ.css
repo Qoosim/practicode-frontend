@@ -43,7 +43,7 @@
   height: 226px;
   width: 100%;
   position: absolute;
-  background: url(images/bgimage.png);
+  background: url(../../images/bgimage.png);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -57,7 +57,7 @@
   height: 226px;
   width: 100%;
   position: absolute;
-  background: url(images/newvector.png);
+  background: url(../../images/newvector.png);
   background-repeat: repeat;
   z-index: -1;
 }
