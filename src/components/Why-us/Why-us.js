@@ -1,48 +1,30 @@
-import './Why-us.css'
-import qualityEducation from './Images/quality-education.png'
-import expertInstructors from './Images/expert-instructors.png'
-import practicalLearning from './Images/practical-learning.png'
-import community from './Images/community-logo.png'
+import React from "react";
+import './Why-us.css';
 
-function WhyUs() {
+const WhyUs = () => {
     return (
-        <div className="why-us-container">
-            <div className="why-us-heading">
-                <p className="yellow-text sm-font bold">———— WHY CHOOSE US</p>
-                <br />
-                <h2>Why Choose Practicode Academy?</h2>
+        <div id="main-body">
+            <div id="sub-div1">
+                <div id="our-courses">&mdash;&mdash;&mdash; <span id="our-courses-text">OUR COURSES</span></div>
+                <div id="courses-and-programs">Courses <br />&  Programs</div>
             </div>
+            <div id="sub-div2">
+                <div id="sub-div2-1">
+                    <button type="button" id="all" className="course-btn" >All</button>
+                    <button type="button" id="popular" className="course-btn">Popular</button>
+                    <button type="button" id="catalogue" className="course-btn active" >Catalogue</button>
+                </div>
+                <div id="sub-div2-2">
+                    <form>
+                        <input type="text" placeholder="Search..." id="course-search-bar" />
+                    </form>
+                </div>
+            </div>
+            <div id="sub-div3">
 
-            <div className="why-us-alignment">
-                <div className="why-us-box">
-                    <img src={qualityEducation} alt="Quality Education Logo"  className="why-choose-us-images" />
-                    <h5>Quality Education</h5>
-                    <br/>
-                    <p>We are committed to excellence in education. Our courses are meticulously crafted and continually updated to meet the highest industry standards.</p>
-                </div>
-                <div className="why-us-box">
-                    <img src={expertInstructors} alt="Expert Instructors Logo"  className="why-choose-us-images" />
-                    <h5>Expert Instructors</h5>
-                    <br/>
-                    <p>Learn from industry experts who bring their wealth of real-world experience into the classroom. Our instructors are dedicated to your success.</p>
-                </div>
-                <div className="why-us-box">
-                    <img src={practicalLearning} alt="Practical Learning Logo" className="why-choose-us-images"  />
-                    <h5>Practical Learning</h5>
-                    <br/>
-                    <p>We believe that the best way to learn is by doing. Our curriculum is designed to give you hands-on experience and the skills needed to excel in your chosen field.</p>
-                </div>
-                <div className="why-us-box">
-                    <img src={community} alt="Community Logo" className="why-choose-us-images"  />
-                    <h5>Community</h5>
-                    <br/>
-                    <p>Join a vibrant and supportive community of learners and mentors who share your passion for technology and design. Connect, collaborate, and grow together.</p>
-                </div>
             </div>
-            <button type="button" className="explore-program-btn">
-                <span className="bold">Explore Programs →</span>
-            </button>
         </div>
-    );
+    )
 }
+
 export default WhyUs;

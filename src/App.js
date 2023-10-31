@@ -12,13 +12,13 @@ import HomePage from "./pages/HomePage/HomePage";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 
 export default function App() {
-  const location = useLocation();
+  // const location = useLocation();
   return (
     <div>
-      {
+      <WhyUs />
+      {/* {
         location.pathname === '/' ? <HomeNavbar /> : <PagesNavbar />
       }
-      <WhyUs />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/enrollment" element={<Enrollment />} />
@@ -27,7 +27,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="*" element={<PageNotFound />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 };

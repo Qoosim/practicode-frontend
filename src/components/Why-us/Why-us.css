@@ -1,73 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
-  margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  padding: 5%;
 }
-.why-us-container {
-  background-color: #ffffffc7;
+#our-courses {
+  color: #f8bf02;
+  font-size: .75rem;
+  font-weight:425;  
+}
+#our-courses-text {
+  padding-left: .85%;
+}
+#courses-and-programs {
+  font-weight: 700;
+  font-size: 1.45rem;
+}
+#sub-div2 {
   display: flex;
-  flex-direction: column;
-  padding-top: 3%;
+  margin-top: 2.1%;
+  margin-bottom: 3%;
 }
-.why-us-heading {
-  text-align: center;
-}
-.why-us-alignment {
-  padding-top:5% ;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-self: center;
-  width: 80%;
-}
-.why-us-box {
-  width: 25%;
-  background-color: #3a202017;
-  min-height: 50vh;
-  height:max-content;
-  margin: 1%;
-  padding: 3% 1% .8% 1%;
-  text-align:left;
-}
-.explore-program-btn {
-  width: 16%;
-  height:5%;
-  padding:1%;
-  align-self: flex-end;
-  border-radius: 22px;
-  margin-right: 11%;
-  border:none;
-  background-color:rgb(238, 241, 38);
-}
-.yellow-text {
-  color: rgb(238, 241, 38);
-}
-.sm-font {
-  font-size: .8em;
-}
-.bold{
-  font-weight:720;
-}
-.why-choose-us-images {
-  width:18%;
-  height: 18%;
-  padding-bottom:6%;
-}
-.why-choose-us-images:last-of-type   {
-  width: 25%;
-  height: 25%;
-}
-.why-choose-us-images:nth-of-type(1) {
-width:5rem;
-}
-/*This just to change the color of the button and the cursor type when hovered on*/
-.explore-program-btn:hover {
-  background-color:rgba(217, 219, 55, 0.753);
+.course-btn {
   color: black;
-  transition: .5s;
-  cursor:pointer;
+  background-color: #e6e6e6e5;
+  padding: 1.2% 2%;
+  width:9vw;
+  border: none;
+  border-radius: 28px;
+  margin-left: 3%;
+}
+.active {
+  background-color:#f8bf02;
+}
+#sub-div2-1 {
+  max-width: 70vw;
+  width: 60vw;
+}
+#sub-div2-2 {
+  max-width: 30vw;
+  width: 40vw;
+}
+#course-search-bar {
+  width: 24vw;
+  padding:4%;
+  border-radius: 28px;
+  border: none;
+  background-color: #e6e6e6e5;
 }
