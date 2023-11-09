@@ -29,7 +29,7 @@ const WhyUs = () => {
             </div>
             <div id="sub-div3">
                 <div className="enrollment-cards">
-                    <img src={phoneLogo} alt="A logo of a smartphone depicting Web and Mobile Development" id="phoneLogo" />
+                    <img src={phoneLogo} alt="A logo of a smartphone depicting Web and Mobile Development" id="phoneLogo" />             
                     <h5 className="enrollment-heading">Web & Mobile Development</h5>
                     <br />
                     <br />
