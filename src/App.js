@@ -1,3 +1,4 @@
+import WhyUs from './components/Why-us/Why-us';
 import React from 'react';
 import { Route, Routes, useLocation } from "react-router-dom";
 import HomeNavbar from "./components/HomeHeader/HomeHeader";
@@ -11,11 +12,11 @@ import HomePage from "./pages/HomePage/HomePage";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 
 export default function App() {
-  const location = useLocation();
-
+  // const location = useLocation();
   return (
     <div>
-      {
+      <WhyUs />
+      {/* {
         location.pathname === '/' ? <HomeNavbar /> : <PagesNavbar />
       }
       <Routes>
@@ -26,7 +27,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="*" element={<PageNotFound />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 };

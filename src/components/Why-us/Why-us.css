@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 5%;
+}
+#our-courses {
+  color: #f8bf02;
+  font-size: .75rem;
+  font-weight:425;  
+}
+#our-courses-text {
+  padding-left: .85%;
+}
+#courses-and-programs {
+  font-weight: 700;
+  font-size: 1.45rem;
+}
+#sub-div2 {
+  display: flex;
+  margin-top: 2.1%;
+  margin-bottom: 3%;
+}
+.course-btn {
+  color: black;
+  background-color: #e6e6e6e5;
+  padding: 1.2% 2%;
+  width:9vw;
+  border: none;
+  border-radius: 28px;
+  margin-left: 3%;
+}
+.course-btn:hover {
+  cursor: pointer;
+  background-color:#e6e6e6;
+  transition: .5s;
+}
+.active {
+  background-color:#f8bf02;
+}
+#sub-div2-1 {
+  max-width: 70vw;
+  width: 60vw;
+}
+#sub-div2-2 {
+  max-width: 30vw;
+  width: 40vw;
+}
+#course-search-bar {
+  width: 24vw;
+  padding:4%;
+  border-radius: 28px;
+  border: none;
+  background-color: #f8f4f4;
+  transform:translate(0, -1.2vh);
+}
+#search-icon {
+  width: 2.8vw;
+  border-radius: 18px;
+  transform: translate(-3.4vw, 0.9vh);
+}
+#sub-div3 {
+  display: flex;
+  padding-left: 7vw;
+  padding-right:7.2vw;
+}
+.enrollment-cards {
+  background-color:#eeebebcc;
+  margin: 1%;
+  text-wrap: wrap;
+  padding:8vh 2vh 2vh ;
+  height: 45vh;
+}
+.enrollment-heading {
+  font-size: .88em;
+  font-weight: 550;
+  padding-top:3vh;
+}
+#databaseLogo{
+  height: 40px;
+  width: 40px;
+}
+#phoneLogo{
+  height: 40px;
+  width: 40px;
+}
+#bracketsLogo {
+  width: 80px;
+  height: 40px;
+}
+#monitorLogo {
+  width: 40px;
+  height: 40px;
+}
