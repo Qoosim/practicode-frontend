@@ -33,11 +33,16 @@ body {
 }
 .course-btn:hover {
   cursor: pointer;
-  background-color:#e6e6e6;
+  background-color:#c7c7c7;
   transition: .5s;
 }
 .active {
   background-color:#f8bf02;
+}
+.active:hover {
+  background-color: #ce9e02;
+  transition: .5s;
+  cursor: pointer;
 }
 #sub-div2-1 {
   max-width: 70vw;
