@@ -1,9 +1,15 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   padding: 5%;
+}
+#main-body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 #our-courses {
   color: #f8bf02;
@@ -24,12 +30,13 @@ body {
 }
 .course-btn {
   color: black;
-  background-color: #e6e6e6e5;
+  background-color:  #e6e6e6e5;
   padding: 1.2% 2%;
-  width:9vw;
+  width: 11vw;
   border: none;
   border-radius: 28px;
   margin-left: 3%;
+  height: 6vh;
 }
 .course-btn:hover {
   cursor: pointer;
@@ -38,7 +45,9 @@ body {
 }
 .active {
   background-color:#f8bf02;
+  transition: .8s;
 }
+
 .active:hover {
   background-color: #ce9e02;
   transition: .5s;
@@ -47,9 +56,12 @@ body {
 #sub-div2-1 {
   max-width: 70vw;
   width: 60vw;
+  display: flex;
+
 }
 #sub-div2-2 {
-  max-width: 30vw;
+  display: flex;
+  min-width: 30vw;
   width: 40vw;
 }
 #course-search-bar {
@@ -57,25 +69,35 @@ body {
   padding:4%;
   border-radius: 28px;
   border: none;
-  background-color: #f8f4f4;
+  background-color:  #e6e6e6e5;
+  min-height: 6vh;
   transform:translate(0, -1.2vh);
+  position:relative;
 }
 #search-icon {
-  width: 2.8vw;
+  height: auto;
+  min-width: 2vw;
+  width: 2.5vw;
   border-radius: 18px;
-  transform: translate(-3.4vw, 0.9vh);
+  transform:translate(-3.8vw, .5vh)
 }
 #sub-div3 {
   display: flex;
   padding-left: 7vw;
   padding-right:7.2vw;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .enrollment-cards {
-  background-color:#eeebebcc;
+  background-color: #e6e6e6e5;
   margin: 1%;
   text-wrap: wrap;
   padding:8vh 2vh 2vh ;
   height: 45vh;
+  /* When i wrote this code, only God and I knew what was happening. Now probably only God knows! */
+  min-width: 230px;
+  max-width: 210px;
+  
 }
 .enrollment-heading {
   font-size: .88em;

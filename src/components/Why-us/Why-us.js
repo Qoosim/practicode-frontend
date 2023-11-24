@@ -15,7 +15,8 @@ function Button(props) {
 
 const WhyUs = () => {
     //Using the useState so that the button that is clicked would be yellow and the others would be grey
-    let [color, setColor] = useState("yellow");
+    let [color, setColor] = useState("catalogue");
+    let [searchTerm, setSearchTerm] = useState('');
     return (
         <div id="main-body">
             <div id="sub-div1">
@@ -30,7 +31,7 @@ const WhyUs = () => {
                 </div>
                 <div id="sub-div2-2">
                     <form>
-                        <input type="text" placeholder="Search..." id="course-search-bar" />
+                        <input type="text" placeholder="Search..." value={searchTerm} onChange={(e) => {setSearchTerm(e.target.value)}} id="course-search-bar" />
                         {/*TODO: Replace the search icon logo with an svg that also acts as a button */}
                         <img src = {searchIcon} alt="Search icon" id="search-icon" />
                     </form>
