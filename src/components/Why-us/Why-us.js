@@ -6,13 +6,16 @@ import phoneLogo from './Images/smartphone-logo.png'
 import databaseLogo from  './Images/database-logo.png'
 import bracketsLogo from  './Images/angle-brackets-logo.png'
 
+function Button(props) {
+    return (
+        // This button component was used to simplify the stress of making three indidual buttons with the same functionality
+        <button type="button" id={props.id}  className={`course-btn ${props.className}`} onClick={props.onClick}>{props.text}</button>
+    )
+}
+
 const WhyUs = () => {
     //Using the useState so that the button that is clicked would be yellow and the others would be grey
-    const [onClick, onClicked] = useState(false)
-    const buttonActivity = () => {
-        onClicked(!onClick)
-        return 0;
-    }
+    let [color, setColor] = useState("yellow");
     return (
         <div id="main-body">
             <div id="sub-div1">
@@ -21,14 +24,14 @@ const WhyUs = () => {
             </div>
             <div id="sub-div2">
                 <div id="sub-div2-1">
-                    {/*This useState is still broken in the fact that activating one button activates all and deactivating one does the same.*/}
-                    <button type="button" id="all" onClick={buttonActivity} className={`course-btn ${onClick ? 'active' : ''}`} >All</button>
-                    <button type="button" id="popular" onClick={buttonActivity}  className={`course-btn ${onClick ? 'active' : ''}`}>Popular</button>
-                    <button type="button" id="catalogue" onClick={buttonActivity} className={`course-btn ${onClick ? 'active' : ''}`} >Catalogue</button>
+                    <Button text={"All"} id="all" onClick={() => {setColor("all")}} className={color === "all" ? 'active' : ''} />
+                    <Button text="Popular" id="popular"  onClick={()=>{setColor('popular')}} className={color === "popular" ? 'active' : ''} />
+                    <Button text="Catalogue" id="catalogue" onClick={() => {setColor("catalogue")}} className={color === "catalogue" ? 'active' : ''} />
                 </div>
                 <div id="sub-div2-2">
                     <form>
                         <input type="text" placeholder="Search..." id="course-search-bar" />
+                        {/*TODO: Replace the search icon logo with an svg that also acts as a button */}
                         <img src = {searchIcon} alt="Search icon" id="search-icon" />
                     </form>
                 </div>
