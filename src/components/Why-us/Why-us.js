@@ -30,11 +30,9 @@ const WhyUs = () => {
                     <Button text="Catalogue" id="catalogue" onClick={() => {setColor("catalogue")}} className={color === "catalogue" ? 'active' : ''} />
                 </div>
                 <div id="sub-div2-2">
-                    <form>
                         <input type="text" placeholder="Search..." value={searchTerm} onChange={(e) => {setSearchTerm(e.target.value)}} id="course-search-bar" />
                         {/*TODO: Replace the search icon logo with an svg that also acts as a button */}
                         <img src = {searchIcon} alt="Search icon" id="search-icon" />
-                    </form>
                 </div>
             </div>
             <div id="sub-div3">
