@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --good-grey:  #e6e6e6e5;
+  --good-yellow: #f8bf02;
+}
 body {
   padding: 5%;
 }
@@ -12,7 +16,7 @@ body {
   overflow: hidden;
 }
 #our-courses {
-  color: #f8bf02;
+  color: var(--good-yellow);
   font-size: .75rem;
   font-weight:425;  
 }
@@ -30,7 +34,7 @@ body {
 }
 .course-btn {
   color: black;
-  background-color:  #e6e6e6e5;
+  background-color:  var(--good-grey);
   padding: 1.2% 2%;
   width: 11vw;
   border: none;
@@ -44,7 +48,7 @@ body {
   transition: .5s;
 }
 .active {
-  background-color:#f8bf02;
+  background-color:var(--good-yellow);
   transition: .8s;
 }
 
@@ -69,16 +73,16 @@ body {
   padding:4%;
   border-radius: 28px;
   border: none;
-  background-color:  #e6e6e6e5;
+  background-color:  var(--good-grey);
   min-height: 6vh;
   transform:translate(0, -1.2vh);
   position:relative;
 }
 #search-icon {
-  height: auto;
-  min-width: 2vw;
-  width: 2.5vw;
-  border-radius: 18px;
+  min-width:20px ;
+  width: 2.4vw;
+  height:min-content;
+  border-radius: 50%;
   transform:translate(-3.8vw, .5vh)
 }
 #sub-div3 {
@@ -89,7 +93,7 @@ body {
   flex-wrap: wrap;
 }
 .enrollment-cards {
-  background-color: #e6e6e6e5;
+  background-color: var(--good-grey);
   margin: 1%;
   text-wrap: wrap;
   padding:8vh 2vh 2vh ;
