@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --good-grey:  #e6e6e6e5;
+  --good-yellow: #f8bf02;
+}
+body {
+  padding: 5%;
+}
+#main-body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#our-courses {
+  color: var(--good-yellow);
+  font-size: .75rem;
+  font-weight:425;  
+}
+#our-courses-text {
+  padding-left: .85%;
+}
+#courses-and-programs {
+  font-weight: 700;
+  font-size: 1.45rem;
+}
+#sub-div2 {
+  display: flex;
+  margin-top: 2.1%;
+  margin-bottom: 3%;
+}
+.course-btn {
+  color: black;
+  background-color:  var(--good-grey);
+  padding: 1.2% 2%;
+  width: 11vw;
+  border: none;
+  border-radius: 28px;
+  margin-left: 3%;
+  height: 6vh;
+}
+.course-btn:hover {
+  cursor: pointer;
+  background-color:#c7c7c7;
+  transition: .5s;
+}
+.active {
+  background-color:var(--good-yellow);
+  transition: .8s;
+}
+
+.active:hover {
+  background-color: #ce9e02;
+  transition: .5s;
+  cursor: pointer;
+}
+#sub-div2-1 {
+  max-width: 70vw;
+  width: 60vw;
+  display: flex;
+
+}
+#sub-div2-2 {
+  display: flex;
+  min-width: 30vw;
+  width: 40vw;
+}
+#course-search-bar {
+  width: 24vw;
+  padding:4%;
+  border-radius: 28px;
+  border: none;
+  background-color:  var(--good-grey);
+  min-height: 6vh;
+  transform:translate(0, -1.2vh);
+  position:relative;
+}
+#search-icon {
+  min-width:20px ;
+  width: 2.4vw;
+  height:min-content;
+  border-radius: 50%;
+  transform:translate(-3.8vw, .5vh)
+}
+#sub-div3 {
+  display: flex;
+  padding-left: 7vw;
+  padding-right:7.2vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.enrollment-cards {
+  background-color: var(--good-grey);
+  margin: 1%;
+  text-wrap: wrap;
+  padding:8vh 2vh 2vh ;
+  height: 45vh;
+  min-width: 230px;
+  max-width: 210px;
+  
+}
+.enrollment-heading {
+  font-size: .88em;
+  font-weight: 550;
+  padding-top:3vh;
+}
+#databaseLogo{
+  height: 40px;
+  width: 40px;
+}
+#phoneLogo{
+  height: 40px;
+  width: 40px;
+}
+#bracketsLogo {
+  width: 80px;
+  height: 40px;
+}
+#monitorLogo {
+  width: 40px;
+  height: 40px;
+}
